@@ -1,40 +1,48 @@
+// github Juan David: PilotK300
 package org.example;
 
-import java.util.Arrays;
-
 public class Main {
+
     public static void main(String[] args) {
-        System.out.println("Hola Juan David");
-        // github Juan David: PilotK300
+        // STRINGS
+        String nombre = "Juan";
+        String nombre1 = new String("Hola Juan");
 
-        // Tipos de datos Primitivos
-        int numero = 10; // rango -2,147,483,648 hasta 2,147,483,647
+        // Manejo de indices
 
-        double temperatura = 18.5; // Doble precision aprox. 15-16 digitos decimales
+        // METODOS
+        // lenght():
+        int longitud = nombre.length();
+        System.out.println(longitud );
 
-        float altura = 1.99f; // precision simple aprox 7 digitos decimales
+        // charAt
+        System.out.println(nombre.charAt(2));
 
-        char letra = 'A';
+        // substring
+        System.out.println(nombre.substring(1,3));
 
-        boolean aceptado = true;
+        String nombre3 = "Juan";
+        //indexOf
+        System.out.println(nombre3.indexOf("u"));
 
-        byte numeroByte = 120; //rango -128 a 127
+        // toLowerCase toUpperCase
+        System.out.println(nombre3.toUpperCase());
 
-        short numeroShort = 20000; // -32768 a 32767
-
-        long numeroLargo = 46464654846L; //-9,223,372,036,854,775,808 hasta 9,223,372,036,854,775,807
-
-        numero = 20;
-
-    // CONSTANTES
-
-        final double NUMERO_PI = 3.1416;
-
-    // Imprimir info en consola
-
-        System.out.print(numeroLargo);
-        System.out.println(numeroShort);
-        System.out.print(numeroByte);
-
+        // trim()
+        String nombre4 = " Juan ";
+        System.out.print(nombre4.trim());
+        System.out.print("**********");
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
