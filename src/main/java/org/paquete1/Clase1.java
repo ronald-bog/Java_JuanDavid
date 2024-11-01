@@ -12,7 +12,7 @@ public class Clase1 {
     private static String atributoS = "Atributo static de clase1";
 
     public void encapsulamiento(){
-        atributo = "";
+        //atributo = "";
         atributoS = "HolaS";
     }
 
