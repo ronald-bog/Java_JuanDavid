@@ -2,6 +2,8 @@
 package org.example;
 
 import org.Animal.Animal;
+import org.herencia.Herencia_H;
+import org.herencia.Herencia_P;
 
 import java.util.Scanner;
 
@@ -9,25 +11,23 @@ public class Main {
 
     public static void main(String[] args) {
 
-        /*Animal perro2 = new Animal();
-        perro2.nombre = "Firulais";
-        perro2.edad = 5;
+        Herencia_P superClase = new Herencia_P("Carlos", 23456);
 
-        Animal gato2 = new Animal();
-        gato2.nombre = "Roger";
-        gato2.edad = 6;*/
+        Herencia_H subclase = new Herencia_H("Juan David", 646464, "Septima");
+        System.out.println(subclase.getNombre());
+        System.out.println(subclase.getCodigo());
+        System.out.println(subclase.getSede());
 
-        Animal perro3 = new Animal("Paco", 10);
-        System.out.println(perro3.hacerSonido());
+        subclase.setNombre("Juan");
+        subclase.setCodigo(8754);
+        subclase.setSede("Carrera 45");
 
-        perro3.hacerSonido();
+        System.out.println(subclase.getNombre());
+        System.out.println(subclase.getCodigo());
+        System.out.println(subclase.getSede());
 
-        System.out.println(perro3.nombre);
-        System.out.println(perro3.edad);
-        //System.out.println(gato2.nombre);
-        //System.out.println(gato2.edad);
-
-
+        superClase.evaluar();
+        subclase.evaluar();
 
     }
 
